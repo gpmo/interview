@@ -1,0 +1,11 @@
+def max_profit(stocks):
+	lo = stocks[0]
+	maxD = 0
+	for p in stocks:
+		if maxD < p - lo:
+			print 'maxD ' + str(maxD)
+			maxD = p -lo
+		if p < lo:
+			print 'min ' + str(lo)
+			lo = p
+	return maxD
