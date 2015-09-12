@@ -13,8 +13,6 @@ def max_profit(stocks):
 def multiplication(numbers):
 	l = numbers[:]
 	l2 = numbers[:]
-	if (numbers):
-		return []
 	m = 1
 	l[0] = 1
 	for i,v in enumerate(numbers):
